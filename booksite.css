@@ -9,6 +9,11 @@
 	width: 90px; 	
 }
 
+.displaysize{
+	height: 228px;
+	width: 180px; 
+}
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -17,9 +22,11 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
+	border: 4px solid black; 
+    background-color: #CDE8EA;
+    min-width: 900px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 100; 
 }
 
 .dropdown:hover .dropdown-content {
@@ -28,5 +35,8 @@
 
 .desc {
     padding: 15px;
-    text-align: center;
+    text-align: left;
 }
+
+
+
