@@ -1,6 +1,7 @@
 .titlecolour{
     color: white;  
     font-weight: bold;
+	font-family: Century Gothic; 
 	/* class for the style of titles on a page */ 
 	
 }
@@ -8,7 +9,7 @@
 	height: 228px;
 	width: 180px;
 	padding: 20px; 	
-	
+	/* book size for the selection page */ 
 }
 .picturesize{
 	height: 140px;
@@ -16,17 +17,19 @@
 	padding: 10px; 
 	
 }
-
+	/* book size in a category */ 
+	
 .displaysize{
 	height: 228px;
 	width: 180px; 
 }
+	/* book sizes for selection page */ 
 
 .dropdown {
     position: relative;
     display: inline-block;
 }
-
+	/* All code for dropdown menus */ 
 .dropdown-content {
     display: none;
     position: absolute;
@@ -36,15 +39,20 @@
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 100; 
 }
-
+	/* All code for dropdown menus */ 
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
+	/* All code for dropdown menus */ 
 .desc {
     padding: 15px;
     text-align: left;
 }
 
+/* All code for dropdown menus */ 
 
-
+.logosize {
+	height: 400px;
+	width: 500px; 
+	text-align: center;  
+}
