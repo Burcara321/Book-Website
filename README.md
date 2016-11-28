@@ -1,18 +1,4 @@
-# Book-Website
-<!DOCTYPE html> 
-<html>
-<head>
-<title>  </title>
-</head>
-<body background="WoodBack.jpg">
-<p style="font-family:Book Antiqua">
-
-<h1>
-<p><font size="20">Worthwile Reads</font></p>
-</h1> 
-<h2><font size="4"> Find great novels you will enjoy  </h2> 
+Website Computer Programming assignment
 
 
-
-</body>
-</html>
+The website that I am develop is an electronic catalog of books that I have read over the course of time. The site will include features that allow users to access to various categories of books. Some features that I would like to include on my website are a rating system, a summary of the book, an image of the front cover and an interactive menu that allows you to choose which genre of reading you will like to explore. For example, if you select the science fiction section, it could bring you to the page of science fiction books I am showcasing. It makes it more organized (each by genre) than just having all the books on one page and adds an interactive feature. I hope to end up having a large enough selection so that people have the opportunity to find something that intrests them while reading. 
