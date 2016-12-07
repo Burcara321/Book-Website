@@ -1,11 +1,30 @@
 <html> 
 <head> 
-<link rel="stylesheet" href="booksite.css">  
+<link rel="stylesheet" href="Style/booksite.css">  
 <title> Graphic Novels and Comics
 </title> 
 </head> 
 <body> 
-<body background="GradientPurple.jpg"> 
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<body background="gray.jpg"> 
 
 <p class=titlecolour>  
 	Graphic Novels - Various; Alan Moore, 1986-1988 <br> <br> </p> 
@@ -13,7 +32,7 @@
 <tr>
 	<td> 
 		<div class=dropdown> 
-		<img class=picturesize src="Killing.jpg">
+		<img class=picturesize src="Images/Killing.jpg">
 		<div class=dropdown-content>
 		<div class=desc> Detective Hercule Poirot boards the Orient Express bound for France. During the first night, a man is brutally murdered, leaving Poirot to deduce which one of the passengers committed the crime. </div>
 		</div>
@@ -23,7 +42,7 @@
 	<!-- Here is the Agatha Christie book section --> 
 	<td> 
 		<div class=dropdown> 
-		<img class=picturesize src="Watchmen.jpg">
+		<img class=picturesize src="Images/Watchmen.jpg">
 		<div class=dropdown-content>
 		<div class=desc> Detective Hercule Poirot boards the Orient Express bound for France. During the first night, a man is brutally murdered, leaving Poirot to deduce which one of the passengers committed the crime. </div>
 		</div>
@@ -32,7 +51,7 @@
 	</td> 
 	<td> 
 		<div class=dropdown> 
-		<img class=picturesize src="Swamp.jpg">
+		<img class=picturesize src="Images/Swamp.jpg">
 		<div class=dropdown-content>
 		<div class=desc> Detective Hercule Poirot boards the Orient Express bound for France. During the first night, a man is brutally murdered, leaving Poirot to deduce which one of the passengers committed the crime. </div>
 		</div>
@@ -48,7 +67,7 @@
 <tr> 
 	<td> 
 		<div class=dropdown>
-		<img class=picturesize src="Court1.jpg">  
+		<img class=picturesize src="Images/Court1.jpg">  
 		<div class=dropdown-content>
 		<div class=desc> In this 8 book series, a teenage Sherlock Holmes runs the streets of 1860 London, learning the tricks of the trade in crime solving: <br> <br> 
 		Death Cloud: Fourteen-year-old Sherlock Holmes is sent to live with his Aunt and Uncle in Hampshire and teams up with Matty Arnatt to investigate two mysterious deaths which appear to be somehow related to a black cloud which Sherlock Holmes has to solve. 
@@ -59,7 +78,7 @@
 
 	<td> 
 		<div class=dropdown>
-		<img class=picturesize src="Court2.jpg">  
+		<img class=picturesize src="Images/Court2.jpg">  
 		<div class=dropdown-content>
 		<div class=desc>
 		Red Leech: Sherlock Holmes investigates the possibility that John Wilkes Booth is alive which takes Sherlock to America with his mentor, Amyus Crowe.
@@ -70,7 +89,7 @@
 
 	<td> 
 		<div class=dropdown>
-		<img class=picturesize src="Court3.jpg">  
+		<img class=picturesize src="Images/Court3.jpg">  
 		<div class=dropdown-content>
 		<div class=desc>
 		Black Ice : Sherlock's brother, Mycroft, invites him  to London for a visit, but when he arrives at his brother's club, they discover Mycroft with dagger in his hand over a dead body.
@@ -81,7 +100,7 @@
 		<!-- Each book has a dropdown description--> 
 	<td> 
 		<div class=dropdown>
-		<img class=picturesize src="Family.jpg">  
+		<img class=picturesize src="Images/Family.jpg">  
 		<div class=dropdown-content>
 		<div class=desc>
 		Fire Storm : Sherlock's mentor and his daughter, Virginia, have disappered, their house looks as if it was abandonned. 
@@ -92,7 +111,7 @@
 
 	<td> 
 		<div class=dropdown>
-		<img class=picturesize src="Zero.jpg"> 
+		<img class=picturesize src="Images/Zero.jpg"> 
 		<div class=dropdown-content>
 		<div class="desc">
 		Snake Bite : Sherlock finds himself in China after being kidnapped. 
@@ -103,7 +122,7 @@
 
 	<td> 
 		<div class=dropdown>
-		<img class=picturesize src="Grave.jpg">  
+		<img class=picturesize src="Images/Grave.jpg">  
 		<div class=dropdown-content>
 		<div class=desc>
 		Knife Edge : Sherlock finds himself to be in the middle of a kidnapping.
@@ -114,7 +133,7 @@
 	
 	<td>
 	<div class=dropdown>
-		<img class=picturesize src="End.jpg">  
+		<img class=picturesize src="Images/End.jpg">  
 		<div class=dropdown-content>
 		<div class=desc>
 		Knife Edge : Sherlock finds himself to be in the middle of a kidnapping.
@@ -125,7 +144,7 @@
 	
 	<td>
 	<div class=dropdown>
-		<img class=picturesize src="Heavy.jpg">  
+		<img class=picturesize src="Images/Heavy.jpg">  
 		<div class=dropdown-content>
 		<div class=desc>
 		Knife Edge : Sherlock finds himself to be in the middle of a kidnapping.
@@ -136,7 +155,7 @@
 	
 	<td> 
 		<div class=dropdown>
-		<img class=picturesize src="Bloom.jpg">  
+		<img class=picturesize src="Images/Bloom.jpg">  
 		<div class=dropdown-content>
 		<div class=desc>
 		Knife Edge : Sherlock finds himself to be in the middle of a kidnapping.
@@ -152,7 +171,7 @@
 <tr>
 <td> 
 		<div class=dropdown> 
-		<img class=picturesize src="JLA1.jpg">
+		<img class=picturesize src="Images/JLA1.jpg">
 		<div class=dropdown-content>
 		<div class=desc> Detective Hercule Poirot boards the Orient Express bound for France. During the first night, a man is brutally murdered, leaving Poirot to deduce which one of the passengers committed the crime. </div>
 		</div>
@@ -161,7 +180,7 @@
 	</td> 
 	<td> 
 		<div class=dropdown> 
-		<img class=picturesize src="JLA2.jpg">
+		<img class=picturesize src="Images/JLA2.jpg">
 		<div class=dropdown-content>
 		<div class=desc> Detective Hercule Poirot boards the Orient Express bound for France. During the first night, a man is brutally murdered, leaving Poirot to deduce which one of the passengers committed the crime. </div>
 		</div>
@@ -170,7 +189,7 @@
 	</td> 
 	<td> 
 		<div class=dropdown> 
-		<img class=picturesize src="JLA3.jpg">
+		<img class=picturesize src="Images/JLA3.jpg">
 		<div class=dropdown-content>
 		<div class=desc> Detective Hercule Poirot boards the Orient Express bound for France. During the first night, a man is brutally murdered, leaving Poirot to deduce which one of the passengers committed the crime. </div>
 		</div>
@@ -179,7 +198,7 @@
 	</td> 
 	<td> 
 		<div class=dropdown> 
-		<img class=picturesize src="JLA4.jpg">
+		<img class=picturesize src="Images/JLA4.jpg">
 		<div class=dropdown-content>
 		<div class=desc> Detective Hercule Poirot boards the Orient Express bound for France. During the first night, a man is brutally murdered, leaving Poirot to deduce which one of the passengers committed the crime. </div>
 		</div>
@@ -188,7 +207,7 @@
 	</td> 
 	<td> 
 		<div class=dropdown> 
-		<img class=picturesize src="JLA5.jpg">
+		<img class=picturesize src="Images/JLA5.jpg">
 		<div class=dropdown-content>
 		<div class=desc> Detective Hercule Poirot boards the Orient Express bound for France. During the first night, a man is brutally murdered, leaving Poirot to deduce which one of the passengers committed the crime. </div>
 		</div>
@@ -197,7 +216,7 @@
 	</td> 
 	<td> 
 		<div class=dropdown> 
-		<img class=picturesize src="JLA6.jpg">
+		<img class=picturesize src="Images/JLA6.jpg">
 		<div class=dropdown-content>
 		<div class=desc> Detective Hercule Poirot boards the Orient Express bound for France. During the first night, a man is brutally murdered, leaving Poirot to deduce which one of the passengers committed the crime. </div>
 		</div>
@@ -206,7 +225,7 @@
 	</td> 
 	<td> 
 		<div class=dropdown> 
-		<img class=picturesize src="JLA7.jpg">
+		<img class=picturesize src="Images/JLA7.jpg">
 		<div class=dropdown-content>
 		<div class=desc> Detective Hercule Poirot boards the Orient Express bound for France. During the first night, a man is brutally murdered, leaving Poirot to deduce which one of the passengers committed the crime. </div>
 		</div>
@@ -215,7 +234,7 @@
 	</td> 
 	<td> 
 		<div class=dropdown> 
-		<img class=picturesize src="JLA8.jpg">
+		<img class=picturesize src="Images/JLA8.jpg">
 		<div class=dropdown-content>
 		<div class=desc> Detective Hercule Poirot boards the Orient Express bound for France. During the first night, a man is brutally murdered, leaving Poirot to deduce which one of the passengers committed the crime. </div>
 		</div>
@@ -224,7 +243,7 @@
 	</td> 
 	<td> 
 		<div class=dropdown> 
-		<img class=picturesize src="JLA9.jpg">
+		<img class=picturesize src="Images/JLA9.jpg">
 		<div class=dropdown-content>
 		<div class=desc> Detective Hercule Poirot boards the Orient Express bound for France. During the first night, a man is brutally murdered, leaving Poirot to deduce which one of the passengers committed the crime. </div>
 		</div>

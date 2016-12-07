@@ -1,45 +1,39 @@
-<! DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <title>Worthwile Reads</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="Style/booksite.css">  <!-- linking the stylesheet to the html file -->
 </head>
 <body>
-  <body background="gray.jpeg">
-   <div class="jumbotron text-center" >
-   
- <script src="JS/java.js"></script> 
-
-<!-- The overlay -->
-<div id="myNav" class="overlay">
-
-  <!-- Button to close the overlay navigation -->
+<div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-  <!-- Overlay content -->
-  <div class="overlay-content">
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
-  </div>
-
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
 </div>
 
-<!-- Use any element to open/show the overlay navigation menu -->
-<span onclick="openNav()">open</span>
- <h1> Books </h1>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</body>    
+
+ <p> Books </p>
   <p>Find Great Novels You Will Enjoy</p>
 </div>
-  
-<div class="container">
-  <div class="row">
-    <div class="col-sm-4">
-	<font size="5"
+ <title>Worthwile Reads</title>
+
+</head>
+<body class=titlecolour> 
+  <body background="Images/gray.jpg">
+  <center> 
+ 
 	<br>
       <h3>Page Naviagtion</h3>
 
@@ -51,15 +45,18 @@
   </ul>
 </nav>
     </div>
-    <div class="col-sm-4">
+    <div>
       <h3>Worthwile Reads</h3>
       <p>Find books that you will enjoy reading. </p>
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
     </div>
-    <div class="col-sm-4">
+    <div>
+	</center> 
       <h3>Sign Up</h3>
-      <p><form action="">
-Username: <input type="text" name="user">
+      
+	  
+	 <p><form action="">
+Username: <input type="text" name="user"> <br> 
 Password: <input type="password" name="password">
 </form>
 

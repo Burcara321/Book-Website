@@ -1,19 +1,39 @@
 <!DOCTYPE html> 
 <html> <!--This page is code for a book selection page--> 
 <head>
-<link rel="stylesheet" href="booksite.css">
+<link rel="stylesheet" href="Style/booksite.css">
 <title>  
-</title>
+</title> 
 </head>
 
-<body background="gradientorange.jpeg">
+<body background="gray.jpg">
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
 <h1 class=titlecolour> Book Selection  </h1> 
 
 <center>
 <table> <!--I made a table so that all my pictures line up perfectly-->  
 <tr>
 		<td>
-		<img class=titlepic src="Orient.jpg">
+		<img class=titlepic src="Images/Orient.jpg">
 	<ul> 
 		<li>
 		<a href="MysterySpy.html"> Mystery and Spy </a>
@@ -23,7 +43,7 @@
 		<!-- Here, I created a link to bring users from a genre selection page to a more specific genre page--> 
 		
 		<td>
-		<img class=titlepic src="enders.jpg" >
+		<img class=titlepic src="Images/enders.jpg" >
 	<ul> 
 		<li>
 		<a href="#"> Science Fiction </a>
@@ -34,7 +54,7 @@
 		
 		
 		<td>
-		<img class=titlepic src="Lightning.jpg" >
+		<img class=titlepic src="Images/Lightning.jpg" >
 	<ul> 
 		<li>
 		<a href="#"> Fantasy and Magic </a>
@@ -44,7 +64,7 @@
 		<!-- This brings you to a page filled with fantasy books--> 
 
 		<td>
-		<img class=titlepic src="KillingJoke.gif">
+		<img class=titlepic src="Images/KillingJoke.gif">
 	<ul> 
 		<center>
 		<li>
@@ -56,7 +76,7 @@
 		
 </tr>
 		<td>
-		<img class=titlepic src="TreasureIsland.jpg" >
+		<img class=titlepic src="Images/TreasureIsland.jpg" >
 	<ul> 
 		<li>
 		<a href="#"> Adventure </a>
@@ -66,7 +86,7 @@
 		<!-- This brings you to a page filled with adventure books--> 
 		
 		<td>
-		<img class=titlepic src="Lygaya.jpg" >
+		<img class=titlepic src="Images/Lygaya.jpg" >
 	<ul> 
 		<li>
 		<a href="#"> French </a>
@@ -76,7 +96,7 @@
 		<!-- This brings you to a page filled with french books--> 
 		
 		<td>
-		<img class=titlepic src="Samurai.jpg">
+		<img class=titlepic src="Images/Samurai.jpg">
 	<ul> 
 		<li>
 		<a href="#"> Historical Fiction </a>
@@ -86,7 +106,7 @@
 		<!-- This brings you to a page filled with historical fiction books--> 
 		
 		<td>
-		<img class=titlepic src="Rye.jpg">
+		<img class=titlepic src="Images/Rye.jpg">
 	<ul> 
 		<li><a href="#"> Coming of Age </a>
 		</li>  
@@ -97,6 +117,5 @@
 </table>
 </center>
 </body>
-
 </html> 
 

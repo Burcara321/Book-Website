@@ -1,11 +1,34 @@
+
 <html> 
 <head> 
-<link rel="stylesheet" href="booksite.css">  
+<link rel="stylesheet" href="Style/booksite.css">  
 <title> Mystery and Spy 
 </title> 
 </head> 
 <body> 
-<body background="GradientPurple.jpg"> 
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+<body background="gray.jpg"> 
+
+
 
 <p class=titlecolour>  
 	Hercule Poirot Mysteries; Agatha Christie, 1934 <br> <br> </p> 
@@ -13,7 +36,7 @@
 <tr>
 	<td> 
 		<div class=dropdown> 
-		<img class=picturesize src="Orient.jpg">
+		<img class=picturesize  src="Images/Orient.jpg">
 		<div class=dropdown-content>
 		<div class=desc> Detective Hercule Poirot boards the Orient Express bound for France. During the first night, a man is brutally murdered, leaving Poirot to deduce which one of the passengers committed the crime. </div>
 		</div>
@@ -23,7 +46,7 @@
 	<!-- Here is the Agatha Christie book section --> 
 	<td> 
 		<div class=dropdown> 
-		<img class=picturesize src="dumb.jpg">
+		<img class=picturesize src="Images/dumb.jpg">
 		<div class=dropdown-content>
 		<div class=desc> Detective Hercule Poirot boards the Orient Express bound for France. During the first night, a man is brutally murdered, leaving Poirot to deduce which one of the passengers committed the crime. </div>
 		</div>
@@ -39,7 +62,7 @@
 <tr> 
 	<td> 
 		<div class=dropdown>
-		<img class=picturesize src="Sherlock.jpg">  
+		<img class=picturesize src="Images/Sherlock.jpg">  
 		<div class=dropdown-content>
 		<div class=desc> In this 8 book series, a teenage Sherlock Holmes runs the streets of 1860 London, learning the tricks of the trade in crime solving: <br> <br> 
 		Death Cloud: Fourteen-year-old Sherlock Holmes is sent to live with his Aunt and Uncle in Hampshire and teams up with Matty Arnatt to investigate two mysterious deaths which appear to be somehow related to a black cloud which Sherlock Holmes has to solve. 
@@ -50,7 +73,7 @@
 
 	<td> 
 		<div class=dropdown>
-		<img class=picturesize src="RedLeech.jpg">  
+		<img class=picturesize src="Images/RedLeech.jpg">  
 		<div class=dropdown-content>
 		<div class=desc>
 		Red Leech: Sherlock Holmes investigates the possibility that John Wilkes Booth is alive which takes Sherlock to America with his mentor, Amyus Crowe.
@@ -61,7 +84,7 @@
 
 	<td> 
 		<div class=dropdown>
-		<img class=picturesize src="BlackIce.jpg">  
+		<img class=picturesize src="Images/BlackIce.jpg">  
 		<div class=dropdown-content>
 		<div class=desc>
 		Black Ice : Sherlock's brother, Mycroft, invites him  to London for a visit, but when he arrives at his brother's club, they discover Mycroft with dagger in his hand over a dead body.
@@ -72,7 +95,7 @@
 		<!-- Each book has a dropdown description--> 
 	<td> 
 		<div class=dropdown>
-		<img class=picturesize src="Fire.jpg">  
+		<img class=picturesize src="Images/Fire.jpg">  
 		<div class=dropdown-content>
 		<div class=desc>
 		Fire Storm : Sherlock's mentor and his daughter, Virginia, have disappered, their house looks as if it was abandonned. 
@@ -83,7 +106,7 @@
 
 	<td> 
 		<div class=dropdown>
-		<img class=picturesize src="Bite.jpg">  
+		<img class=picturesize src="Images/Bite.jpg">  
 		<div class=dropdown-content>
 		<div class="desc">
 		Snake Bite : Sherlock finds himself in China after being kidnapped. 
@@ -94,7 +117,7 @@
 
 	<td> 
 		<div class=dropdown>
-		<img class=picturesize src="Knife.jpg">  
+		<img class=picturesize src="Images/Knife.jpg">  
 		<div class=dropdown-content>
 		<div class=desc>
 		Knife Edge : Sherlock finds himself to be in the middle of a kidnapping.
@@ -105,7 +128,7 @@
 	<!-- Dropdown menus have the description of the book in it --> 
 	<td> 
 		<div class=dropdown>
-		<img class=picturesize src="Stone.jpg">  
+		<img class=picturesize src="Images/Stone.jpg">  
 		<div class=dropdown-content>
 		<div class=desc>
 		Stone Cold :  Sherlock Holmes has been sent to live in Oxford for his schooling, body parts are being stolen from corpses and are being mailed to an address in London. 
@@ -116,7 +139,7 @@
 
 	<td> 
 		<div class=dropdown>
-		<img class=picturesize src="Night.jpg">  
+		<img class=picturesize src="Images/Night.jpg">  
 		<div class=dropdown-content>
 		<div class=desc>
 		Night Break : Sherlock's mother has died and his father has went missing in India while his sister beagn acting erraitcallu. A stange disappearance leads them to Egypt.
@@ -133,7 +156,7 @@ H.I.V.E; Mark Walden, 2006 </p> <br>
 <tr> 
 	<td> 
 		<div class=dropdown>
-		<img class=picturesize src="Hive.png">
+		<img class=picturesize src="Images/Hive.png">
 		<div class=dropdown-content>
 		<div class=desc>H.I.V.E</div>
 		</div>
@@ -142,7 +165,7 @@ H.I.V.E; Mark Walden, 2006 </p> <br>
 
 	<td> 
 		<div class=dropdown>
-		<img class=picturesize src="Overlord.jpg">  
+		<img class=picturesize src="Images/Overlord.jpg">  
 		<div class=dropdown-content>
 		<div class=desc>
 		Stone Cold :  Sherlock Holmes has been sent to live in Oxford for his schooling, body parts are being stolen from corpses and are being mailed to an address in London. W
@@ -153,7 +176,7 @@ H.I.V.E; Mark Walden, 2006 </p> <br>
 
 	<td> 
 		<div class=dropdown>
-		<img class=picturesize src="Escape.jpg">  
+		<img class=picturesize src="Images/Escape.jpg">  
 		<div class=dropdown-content>
 		<div class=desc>
 		Stone Cold :  Sherlock Holmes has been sent to live in Oxford for his schooling, body parts are being stolen from corpses and are being mailed to an address in London. W
@@ -164,7 +187,7 @@ H.I.V.E; Mark Walden, 2006 </p> <br>
 
 	<td> 
 		<div class=dropdown>
-		<img class=picturesize src="Dread.jpg">  
+		<img class=picturesize src="Images/Dread.jpg">  
 		<div class=dropdown-content>
 		<div class=desc>
 		Stone Cold :  Sherlock Holmes has been sent to live in Oxford for his schooling, body parts are being stolen from corpses and are being mailed to an address in London. W
@@ -175,7 +198,7 @@ H.I.V.E; Mark Walden, 2006 </p> <br>
 
 	<td> 
 		<div class=dropdown>
-		<img class=picturesize src="Rogue.jpg">  
+		<img class=picturesize src="Images/Rogue.jpg">  
 		<div class=dropdown-content>
 		<div class=desc>
 		Stone Cold :  Sherlock Holmes has been sent to live in Oxford for his schooling, body parts are being stolen from corpses and are being mailed to an address in London. W
@@ -186,7 +209,7 @@ H.I.V.E; Mark Walden, 2006 </p> <br>
 
 	<td> 
 		<div class=dropdown>
-		<img class=picturesize src="After.jpg"> 
+		<img class=picturesize src="Images/After.jpg"> 
 		<div class=dropdown-content>
 		<div class=desc>
 		Stone Cold :  Sherlock Holmes has been sent to live in Oxford for his schooling, body parts are being stolen from corpses and are being mailed to an address in London. W
@@ -197,7 +220,7 @@ H.I.V.E; Mark Walden, 2006 </p> <br>
 
 		<td> 
 		<div class=dropdown>
-  <img class=picturesize src="Shock.jpg">  
+  <img class=picturesize src="Images/Shock.jpg">  
   <div class=dropdown-content>
     <div class=desc>
 Stone Cold :  Sherlock Holmes has been sent to live in Oxford for his schooling, body parts are being stolen from corpses and are being mailed to an address in London. W
@@ -208,7 +231,7 @@ Stone Cold :  Sherlock Holmes has been sent to live in Oxford for his schooling,
 
 	<td> 
 		<div class=dropdown>
-		<img class=picturesize src="Dead.jpg">  
+		<img class=picturesize src="Images/Dead.jpg">  
 		<div class=dropdown-content>
 		<div class=desc>
 		Stone Cold :  Sherlock Holmes has been sent to live in Oxford for his schooling, body parts are being stolen from corpses and are being mailed to an address in London. W
@@ -225,7 +248,7 @@ Young James Bond; Charlie Higson, 2005 <br> <br> </p>
 <tr> 
 	<td> 
 		<div class=dropdown> 
-		<img class=picturesize src="Silver.jpg">
+		<img class=picturesize src="Images/Silver.jpg">
 		<div class=dropdown-content>
 		<div class=desc> Detective Hercule Poirot boards the Orient Express bound for France. During the first night, a man is brutally murdered, leaving Poirot to deduce which one of the passengers committed the crime. </div>
 		</div>
@@ -235,7 +258,7 @@ Young James Bond; Charlie Higson, 2005 <br> <br> </p>
 
 	<td> 
 		<div class=dropdown> 
-		<img class=picturesize src="Blood.jpg">
+		<img class=picturesize src="Images/Blood.jpg">
 		<div class=dropdown-content>
 		<div class=desc> Detective Hercule Poirot boards the Orient Express bound for France. During the first night, a man is brutally murdered, leaving Poirot to deduce which one of the passengers committed the crime. </div>
 		</div>
@@ -245,7 +268,7 @@ Young James Bond; Charlie Higson, 2005 <br> <br> </p>
 
 	<td> 
 		<div class=dropdown> 
-		<img class=picturesize src="Double.jpg">
+		<img class=picturesize src="Images/Double.jpg">
 		<div class=dropdown-content>
 		<div class=desc> Detective Hercule Poirot boards the Orient Express bound for France. During the first night, a man is brutally murdered, leaving Poirot to deduce which one of the passengers committed the crime. </div>
 		</div>
@@ -255,7 +278,7 @@ Young James Bond; Charlie Higson, 2005 <br> <br> </p>
 
 	<td> 
 		<div class=dropdown> 
-		<img class=picturesize src="Gold.jpg">
+		<img class=picturesize src="Images/Gold.jpg">
 		<div class=dropdown-content>
 		<div class=desc> Detective Hercule Poirot boards the Orient Express bound for France. During the first night, a man is brutally murdered, leaving Poirot to deduce which one of the passengers committed the crime. </div>
 		</div>
@@ -265,7 +288,7 @@ Young James Bond; Charlie Higson, 2005 <br> <br> </p>
 
 	<td> 
 		<div class=dropdown> 
-		<img class=picturesize src="Royal.jpg">
+		<img class=picturesize src="Images/Royal.jpg">
 		<div class=dropdown-content>
 		<div class=desc> Detective Hercule Poirot boards the Orient Express bound for France. During the first night, a man is brutally murdered, leaving Poirot to deduce which one of the passengers committed the crime. </div>
 		</div>
@@ -275,7 +298,7 @@ Young James Bond; Charlie Higson, 2005 <br> <br> </p>
 
 	<td> 
 		<div class=dropdown> 
-		<img class=picturesize src="Shoot.jpg">
+		<img class=picturesize src="Images/Shoot.jpg">
 		<div class=dropdown-content>
 		<div class=desc> Detective Hercule Poirot boards the Orient Express bound for France. During the first night, a man is brutally murdered, leaving Poirot to deduce which one of the passengers committed the crime. </div>
 		</div>
@@ -292,7 +315,7 @@ The Shadow Project Adventures; Herbert Brennan, 2009 <br> <br> </p>
 <tr> 
 	<td> 
 		<div class=dropdown> 
-		<img class=picturesize src="Doom.jpg">
+		<img class=picturesize src="Images/Doom.jpg">
 		<div class=dropdown-content>
 		<div class=desc> Detective Hercule Poirot boards the Orient Express bound for France. During the first night, a man is brutally murdered, leaving Poirot to deduce which one of the passengers committed the crime. </div>
 		</div>
@@ -302,7 +325,7 @@ The Shadow Project Adventures; Herbert Brennan, 2009 <br> <br> </p>
 
 	<td> 
 		<div class=dropdown> 
-		<img class=picturesize src="Doom2.jpg">
+		<img class=picturesize src="Images/Doom2.jpg">
 		<div class=dropdown-content>
 		<div class=desc> Detective Hercule Poirot boards the Orient Express bound for France. During the first night, a man is brutally murdered, leaving Poirot to deduce which one of the passengers committed the crime. </div>
 		</div>
