@@ -1,5 +1,5 @@
 .titlecolour{
-    color: white;  
+    color: black;  
     font-weight: bold;
 	font-family: Century Gothic; 
 	/* class for the style of titles on a page */ 
@@ -81,9 +81,9 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #50555B;
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 1s;
     padding-top: 60px;
 }
 
@@ -168,4 +168,54 @@ body {
         top: 15px;
         right: 35px;
     }
+}
+
+{margin:0;}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #50555B;
+}
+
+ul.topnav li {float: right;}
+
+ul.topnav li a {
+  display: inline-block;
+  color: #818181;
+  text-align: center;
+  padding: 0px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.topnav li a:hover {background-color: #555;}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
 }
