@@ -2,7 +2,7 @@
 <head>
 <link rel="stylesheet" href="Style/booksite.css">  <!-- linking the stylesheet to the html file -->
 		<ul class="topnav" id="myTopnav">
-			<li><a class="active" href="#home">Home</a></li>
+			<li><a class="active" href="homepage.html">Home</a></li>
 			<li><a href="#news">News</a></li>
 			<li><a href="#contact">Contact</a></li>
 			<li><a href="#about">About</a></li>
@@ -10,6 +10,8 @@
 			<a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
 			</li>
 		</ul>
+		
+		
 <script> 
 	function myFunction() {
     var x = document.getElementById("myTopnav");
@@ -40,6 +42,7 @@
 
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
 
+
 <script>
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
@@ -49,21 +52,22 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 </script>
+
+
 </body>    
+</div> 
+ 
 
- <p> Books </p>
-  <p>Find Great Novels You Will Enjoy</p>
-</div>
- <title>Worthwhile Reads</title>
+<title> Worthwile Reads </title>
 
-</head>
+</head> 
 <body class=titlecolour> 
   <body background="Images/hex.jpg">
   <center> 
  
 	
     <div>
-      <h3>Worthwile Reads</h3>
+      <h3 class=titlesize></h3>
       <p>Find books that you will enjoy reading. </p>
    
     </div>
@@ -76,23 +80,82 @@ function closeNav() {
 
 
 <div class="slideshow-container">
-
 <div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="Images/Court1.jpg" style="width:25%">
-  <div class="text">Court of Owls </div>
+<div class="numbertext">1 / 3</div> 
+  
+<table> 
+	<tr> 
+		<td> </td> 
+		<td> </td> 
+		<td> <img class=imageleft src="Images/Goodstars.jpg"> </td> 
+	</tr>
+	<tr> 
+		<td> <img class=slideshot src="Images/Family.jpg"> </td> 
+		<td> </td>`
+		<td>After getting his face cut off by the notorious Dollmaker and disapeering for over a year, the Joker makes his triumphant <br> 
+			re-entry in Gotham City. Starting his new reign by attacking the GCPD officers and retrieving his preserved face from their <br>
+			vaults, he proceeds to re-enact some of his earliest crimes, enlisting the help of Harley Quinn and other villains. With some <br>
+			preparation, the Joker has planned one of his most horrible and personal attacks on the Bat-famiy ever, attacks motivated by <br> 
+			nothing other than love...
+		</td>  
+  </tr> 
+</table> 
+  <br> 
+  <br> 
+  <br> 
+<div class="text">Batman: The New 52 - Death of the Family (Volume 3) </div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 3</div>
-  <img src="Images/Orient.jpg" style="width:25%">
-  <div class="text">Caption Two</div>
+ <table> 
+	<tr> 
+		<td> </td> 
+		<td> </td> 
+		<td> <img class=imageleft src="Images/Goodstars.jpg"> </td> 
+	</tr>
+	<tr> 
+		<td> <img class=slideshot src="Images/Orient.jpg" > </td> 
+		<td> </td>
+		<td>After getting his face cut off by the notorious Dollmaker and disapeering for over a year, the Joker makes his triumphant <br> 
+			re-entry in Gotham City. Starting his new reign by attacking the GCPD officers and retrieving his preserved face from their <br>
+			vaults, he proceeds to re-enact some of his earliest crimes, enlisting the help of Harley Quinn and other villains. With some <br>
+			preparation, the Joker has planned one of his most horrible and personal attacks on the Bat-famiy ever, attacks motivated by <br> 
+			nothing other than love...
+		</td>  
+  </tr> 
+</table> 
+  <br> 
+  <br> 
+  <br>  
+ 
+  <div class="text">Murder on the Orient Express</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 3</div>
-  <img src="Images/Hive.jpg" style="width:25%">
-  <div class="text">Caption Three</div>
+  <table> 
+	<tr> 
+		<td> </td> 
+		<td> </td> 
+		<td> <img class=imageleft src="Images/Goodstars.jpg"> </td> 
+	</tr>
+	<tr> 
+		<td> <img class=slideshot src="Images/Hive.jpg"> </td> 
+		<td> </td>
+		<td>After getting his face cut off by the notorious Dollmaker and disapeering for over a year, the Joker makes his triumphant <br> 
+			re-entry in Gotham City. Starting his new reign by attacking the GCPD officers and retrieving his preserved face from their <br>
+			vaults, he proceeds to re-enact some of his earliest crimes, enlisting the help of Harley Quinn and other villains. With some <br>
+			preparation, the Joker has planned one of his most horrible and personal attacks on the Bat-famiy ever, attacks motivated by <br> 
+			nothing other than love...
+		</td>  
+  </tr> 
+</table> 
+  <br> 
+  <br> 
+  <br> 
+   
+  <div class="text">H.I.V.E - The Higher Institue for Villainous Education</div>
 </div>
 
 </div>
@@ -103,6 +166,8 @@ function closeNav() {
   <span class="dot"></span> 
   <span class="dot"></span> 
 </div>
+
+
 
 <script>
 var slideIndex = 0;
@@ -122,7 +187,7 @@ function showSlides() {
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 15000); // Change image every 5 seconds
+    setTimeout(showSlides, 10000); // Changes image every 15 seconds
 }
 </script>
 
