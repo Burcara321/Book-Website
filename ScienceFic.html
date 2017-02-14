@@ -1,0 +1,78 @@
+<html> 
+<head> 
+<link rel="stylesheet" href="Style/booksite.css">  
+<title> Science Fiction
+</title> 
+<link rel="stylesheet" href="Style/booksite.css">  <!-- linking the stylesheet to the html file -->
+		<ul class="topnav" id="myTopnav">
+			<li><a class="active" href="homepage.html">Home</a></li>
+			<li><a href="#news">News</a></li>
+			<li><a href="#contact">Contact</a></li>
+			<li><a href="#about">About</a></li>
+			<li class="icon">
+			<a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+			</li>
+		</ul>
+</head> 
+<body> 
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="homepage.html">Home</a>
+  <a href="bookselection.html">Book selection</a>
+  <a href="MysterySpy.html">Mystery and Spy</a>
+  <a href="ScienceFic.html">Science Fiction</a>
+  <a href="Fantasy.html">Fantasy and Magic</a>
+  <a href="Comics.html">Graphic Novels and Comics</a>
+  <a href="#">Adventure</a>
+  <a href="French.html">French</a>
+  <a href="#">Historical Fiction</a>
+  <a href="Coming.html">Coming of Age</a>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+<body background="Images/wall.jpg"> 
+
+<p> Science Fiction </p> 
+
+<p class=titlecolour>  
+	Ender's Game; Orson Scott Card, 1985 <br> <br> </p> 
+<table> 
+<tr>
+	<td> 
+		<div class=dropdown> 
+		<img class=picturesize  src="Images/Enders.jpg">
+		<div class=dropdown-content>
+		<div class=desc> Detective Hercule Poirot boards the Orient Express bound for France. During the first night, a man is brutally murdered, leaving Poirot to deduce which one of the passengers committed the crime. </div>
+		</div>
+		</div>
+		</div> 
+	</td> 
+</tr>
+</table> 	
+
+<p class=titlecolour>
+1984; George Orwell, 1949 <br> <br> </p> 
+<table> 
+<tr>
+	<td> 
+		<div class=dropdown> 
+		<img class=picturesize  src="Images/1984.jpg">
+		<div class=dropdown-content>
+		<div class=desc> Detective Hercule Poirot boards the Orient Express bound for France. During the first night, a man is brutally murdered, leaving Poirot to deduce which one of the passengers committed the crime. </div>
+		</div>
+		</div>
+		</div> 
+	</td> 
+</tr>
+</table> 	
