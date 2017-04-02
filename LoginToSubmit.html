@@ -1,18 +1,16 @@
 <html>
 <head>
 
-<p>Step 1: Click the button to sign in.</p>
-
-<button onclick="myFunction()">Sign In</button>
-
-<p id="demo"></p>
+<p>Step 1: Click the button to sign in.</p>  <!--Login Button, press this to intiate login prompts--> 
+<button onclick="myFunction()">Sign In</button> 
+<p id="demo"></p> <!--Connect the button to the function that allows the login--> 
 
 <script>
-function myFunction() {
+function myFunction() { // Javascript function that asks for the login information like username and password.
     var username = "Andrew"  // This variable defines the set username.
-var password = "Hello123" // This variable defines the set password. 
-var userprompt = prompt("Please enter your login username") // This variable defines what I want my username to match with when this prompt appears. 
-var passprompt = prompt("Please enter your login password") // This variable defines what I want my password to match with when this prompt appears.  
+    var password = "Hello123" // This variable defines the set password. 
+    var userprompt = prompt("Please enter your login username") // This variable defines what I want my username to match with when this prompt appears. 
+    var passprompt = prompt("Please enter your login password") // This variable defines what I want my password to match with when this prompt appears.  
 
 if(username === userprompt)   //This statement sees if the what is inputed when the prompt appears matches with what the variable username (Andrew) is set as.
 {    
@@ -25,12 +23,14 @@ else {  confirm("Incorrect Password, please try again")}  //If the password is i
 else { (confirm("Incorrect username, please try again"))} //If the username is incorrect, this message appears, refresh the page to try again. 
 }
 </script>
-<p id="demo">Step 2: Please click button to finalize profile sign in.</p>
-
+	
+<p id="demo">Step 2: Please click button to finalize profile sign in.</p>  <!--By clicking this button, HTML changes and the username shows up ath the top-->
 <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello Andrew!"'>Click Me to Finish Signing In!</button>
-<link rel="stylesheet" href="Style/booksite.css">  <!-- linking the stylesheet to the html file --> 
 
+	
+<link rel="stylesheet" href="Style/booksite.css">  <!-- linking the stylesheet to the html file --> 
 </head>
+
 <body> 
 <ul class="topnav" id="myTopnav">
 		    <li><a href="#SignIn">Sign In</a></li>
