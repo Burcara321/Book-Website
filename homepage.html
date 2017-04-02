@@ -12,17 +12,17 @@ if(username === userprompt)   //This statement sees if the what is inputed when 
 {    
 	if(passprompt === password)  //This statement sees if the what is inputed when the prompt appears matches with what the variable password (Hello123) is set as.
 {
-	confirm("Hello, your login was successful. Please enjoy the site.") //If both the username and the password match with the variable username and password when their respective prompts are answered, this message. 
+	confirm("Hello, your login is almost done. Please enjoy the site and click button to finalize login.") //If both the username and the password match with the variable username and password when their respective prompts are answered, this message. 
 }
-else {  confirm("Incorrect Password, please try again")}  //If the password is incorrect, this message appears. 
+else {  confirm("Incorrect Password, please try again")}  //If the password is incorrect, this message appears, refresh the page to try again. 
 }
-else { (confirm("Incorrect username, please try again"))} //If the username was incorrect, this message appears. 
+else { (confirm("Incorrect username, please try again"))} //If the username is incorrect, this message appears, refresh the page to try again. 
 
 </script> 	
+	
+<p id="demo">Please click button to finish sign in.</p>
 
-
-<link rel="stylesheet" href="Style/booksite.css">  <!-- linking the stylesheet to the html file --> 
-
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello Andrew!"'>Click Me to Sign In!</button>
 
 
 		<ul class="topnav" id="myTopnav">
