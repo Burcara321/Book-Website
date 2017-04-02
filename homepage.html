@@ -1,10 +1,30 @@
 <html>
 <head>
+
+<script type="text/javascript"> 
+var username = "Andrew"
+var password = "Hello123"
+var user = prompt("Please enter your login username")
+var pass = prompt("Please enter your login password")
+if(username === user)
+{    if(pass === password) 
+   {confirm("Hello, your login was successful. Please enjoy the site.") }
+   else{confirm("Incorrect Password, please try again")}
+}
+ else{(confirm("Incorrect username, please try again"))}
+</script> 	
+
+
+
+
+
+
 <link rel="stylesheet" href="Style/booksite.css">  <!-- linking the stylesheet to the html file --> 
 
 
 
 		<ul class="topnav" id="myTopnav">
+		    <li><a href="#SignIn">Sign In</a></li>
 			<li><a class="active" href="homepage.html">Home</a></li>
 			<li><a href="#news">News</a></li>
 			<li><a href="#contact">Contact</a></li>
@@ -14,7 +34,7 @@
 			</li>
 		</ul>
 		
-		
+	
 <script> 
 	function myFunction() {
     var x = document.getElementById("myTopnav");
@@ -42,6 +62,12 @@
   <a href="#">Historical Fiction</a>
   <a href="Coming.html">Coming of Age</a>
 </div>
+
+	
+
+
+
+
 
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
 
