@@ -2,21 +2,23 @@
 <head>
 
 <script type="text/javascript"> 
-var username = "Andrew"
-var password = "Hello123"
-var user = prompt("Please enter your login username")
-var pass = prompt("Please enter your login password")
-if(username === user)
-{    if(pass === password) 
-   {confirm("Hello, your login was successful. Please enjoy the site.") }
-   else{confirm("Incorrect Password, please try again")}
+	
+var username = "Andrew"  // This variable defines the set username.
+var password = "Hello123" // This variable defines the set password. 
+var userprompt = prompt("Please enter your login username") // This variable defines what I want my username to match with when this prompt appears. 
+var passprompt = prompt("Please enter your login password") // This variable defines what I want my password to match with when this prompt appears.  
+
+if(username === userprompt)   //This statement sees if the what is inputed when the prompt appears matches with what the variable username (Andrew) is set as.
+{    
+	if(passprompt === password)  //This statement sees if the what is inputed when the prompt appears matches with what the variable password (Hello123) is set as.
+{
+	confirm("Hello, your login was successful. Please enjoy the site.") //If both the username and the password match with the variable username and password when their respective prompts are answered, this message. 
 }
- else{(confirm("Incorrect username, please try again"))}
+else {  confirm("Incorrect Password, please try again")}  //If the password is incorrect, this message appears. 
+}
+else { (confirm("Incorrect username, please try again"))} //If the username was incorrect, this message appears. 
+
 </script> 	
-
-
-
-
 
 
 <link rel="stylesheet" href="Style/booksite.css">  <!-- linking the stylesheet to the html file --> 
