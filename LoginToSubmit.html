@@ -1,0 +1,236 @@
+<html>
+<head>
+
+<p>Step 1: Click the button to sign in.</p>
+
+<button onclick="myFunction()">Sign In</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var username = "Andrew"  // This variable defines the set username.
+var password = "Hello123" // This variable defines the set password. 
+var userprompt = prompt("Please enter your login username") // This variable defines what I want my username to match with when this prompt appears. 
+var passprompt = prompt("Please enter your login password") // This variable defines what I want my password to match with when this prompt appears.  
+
+if(username === userprompt)   //This statement sees if the what is inputed when the prompt appears matches with what the variable username (Andrew) is set as.
+{    
+	if(passprompt === password)  //This statement sees if the what is inputed when the prompt appears matches with what the variable password (Hello123) is set as.
+{
+	confirm("Hello, your login is almost done. Please enjoy the site and click step 2 button to finalize login.") //If both the username and the password match with the variable username and password when their respective prompts are answered, this message. 
+}
+else {  confirm("Incorrect Password, please try again")}  //If the password is incorrect, this message appears, refresh the page to try again. 
+}
+else { (confirm("Incorrect username, please try again"))} //If the username is incorrect, this message appears, refresh the page to try again. 
+}
+</script>
+<p id="demo">Step 2: Please click button to finalize profile sign in.</p>
+
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello Andrew!"'>Click Me to Finish Signing In!</button>
+<link rel="stylesheet" href="Style/booksite.css">  <!-- linking the stylesheet to the html file --> 
+
+</head>
+<body> 
+<ul class="topnav" id="myTopnav">
+		    <li><a href="#SignIn">Sign In</a></li>
+			<li><a class="active" href="homepage.html">Home</a></li>
+			<li><a href="#news">News</a></li>
+			<li><a href="#contact">Contact</a></li>
+			<li><a href="#about">About</a></li>
+			<li class="icon">
+			<a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+			</li>
+		</ul>
+		
+	 
+<script> 
+	function myFunctiona() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script> 
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="homepage.html">Home</a>
+  <a href="bookselection.html">Book selection</a>
+  <a href="MysterySpy.html">Mystery and Spy</a>
+  <a href="Sciencefic.html">Science Fiction</a>
+  <a href="Fantasy.html">Fantasy and Magic</a>
+  <a href="Comics.html">Graphic Novels and Comics</a>
+  <a href="#">Adventure</a>
+  <a href="French.html">French</a>
+  <a href="#">Historical Fiction</a>
+  <a href="Coming.html">Coming of Age</a>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+
+ 
+</div> 
+ 
+ 
+ <!DOCTYPE html>
+<html>
+<head>
+
+
+
+<title> Worthwile Reads </title>
+
+</head> 
+<body class=titlecolour> 
+  <body background="Images/wall.jpg">
+  <center> 
+ 
+	
+    <div>
+      <h3 class=titlesize></h3>
+      <p>Find books that you will enjoy reading. </p>
+   
+    </div>
+    <div>
+	</center> 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<h2>Featured Books</h2>
+
+
+<div class="slideshow-container">
+<div class="mySlides fade">
+<div class="numbertext">1 / 3</div> 
+  
+<table> 
+	<tr> 
+		<td> </td> 
+		<td> </td> 
+		<td> <img class=imageleft src="Images/Goodstars.jpg"> </td> 
+	</tr>
+	<tr> 
+		<td> <img class=slideshot src="Images/Family.jpg"> </td> 
+		<td> </td>`
+		<td>After getting his face cut off by the notorious Dollmaker and disapeering for over a year, the Joker makes his triumphant <br> 
+			re-entry in Gotham City. Starting his new reign by attacking the GCPD officers and retrieving his preserved face from their <br>
+			vaults, he proceeds to re-enact some of his earliest crimes, enlisting the help of Harley Quinn and other villains. With some <br>
+			preparation, the Joker has planned one of his most horrible and personal attacks on the Bat-famiy ever, attacks motivated by <br> 
+			nothing other than love...
+		</td>  
+  </tr> 
+</table> 
+  <br> 
+  <br> 
+  <br> 
+<div class="text">Batman: The New 52 - Death of the Family (Volume 3) </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+ <table> 
+	<tr> 
+		<td> </td> 
+		<td> </td> 
+		<td> <img class=imageleft src="Images/Goodstars.jpg"> </td> 
+	</tr>
+	<tr> 
+		<td> <img class=slideshot src="Images/Orient.jpg" > </td> 
+		<td> </td>
+		<td>After getting his face cut off by the notorious Dollmaker and disapeering for over a year, the Joker makes his triumphant <br> 
+			re-entry in Gotham City. Starting his new reign by attacking the GCPD officers and retrieving his preserved face from their <br>
+			vaults, he proceeds to re-enact some of his earliest crimes, enlisting the help of Harley Quinn and other villains. With some <br>
+			preparation, the Joker has planned one of his most horrible and personal attacks on the Bat-famiy ever, attacks motivated by <br> 
+			nothing other than love...
+		</td>  
+  </tr> 
+</table> 
+  <br> 
+  <br> 
+  <br>  
+ 
+  <div class="text">Murder on the Orient Express</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <table> 
+	<tr> 
+		<td> </td> 
+		<td> </td> 
+		<td> <img class=imageleft src="Images/Goodstars.jpg"> </td> 
+	</tr>
+	<tr> 
+		<td> <img class=slideshot src="Images/Hive.jpg"> </td> 
+		<td> </td>
+		<td>After getting his face cut off by the notorious Dollmaker and disapeering for over a year, the Joker makes his triumphant <br> 
+			re-entry in Gotham City. Starting his new reign by attacking the GCPD officers and retrieving his preserved face from their <br>
+			vaults, he proceeds to re-enact some of his earliest crimes, enlisting the help of Harley Quinn and other villains. With some <br>
+			preparation, the Joker has planned one of his most horrible and personal attacks on the Bat-famiy ever, attacks motivated by <br> 
+			nothing other than love...
+		</td>  
+  </tr> 
+</table> 
+  <br> 
+  <br> 
+  <br> 
+   
+  <div class="text">H.I.V.E - The Higher Institue for Villainous Education</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 10000); // Changes image every 15 seconds
+}
+</script>
+
+	
+	
+	
+	
+</body>
+</html>
+
+
