@@ -6,35 +6,43 @@
 
 
 <script type="text/javascript"> 
-var username = "Andrew" // This variable defines the set username.
-var password = "Hello123" // This variable defines the set password.
-var incorrect = "Incorrect Login" //This vairable will show up after the user puts in incorect usernames or passwords
-var user = prompt("Please enter your login username") // This variable defines what I want my username to match with when this prompt appears.
-var pass = prompt("Please enter your login password") // This variable defines what I want my password to match with when this prompt appears. 
-if(username === user) //This statement sees if the what is inputed when the prompt appears matches with what the variable username (Andrew) is set as.
-{    if(pass === password)  //This statement sees if the what is inputed when the prompt appears matches with what the variable password (Hello123) is set as.
-     {confirm("Hello, your login was successful. Please enjoy the site.") } //If both the username and the password match with the variable username and password when their respective prompts are answered, this message. 
-		else{confirm("Incorrect Password, please try again")}  //If the password is incorrect, this message appears, refresh the page to try again. 
+var username = ["Andrew", "Pauline"] 											// This variable defines the set username.
+var password = ["Burcar", "Marois"]  											// This variable defines the set password.
+var incorrect = "Incorrect Login" 												// Variable for when the login did not work
+var user = prompt("Please enter your login username") 							// This variable defines what I want my username to match with when this prompt appears.
+var pass = prompt("Please enter your login password") 							// Prompts the user to imput their password
+
+for(i=0; i < username.length; i++){												//For loop to re run checking of the array for password and username
+	if(username[i] === user){													// Checking usernames across the array
+		if(password[i] === pass){												// Checking passwords across the array
+		confirm("Hello, your login was successful. Please enjoy the site.")		// Message when the login works
+		}
+		else {confirm("Incorrect username, please try again")} 					//Message when the password works		
+		}
+						
+	}
+
+	for(i = 0; i < username.length; i++){
+	if(username[i] === user){
+	if(password[i] === pass){
+		window.onload = function() {
+		document.getElementById("username").innerHTML=user;
 }
-else{(confirm("Incorrect username, please try again"))} //If the username is incorrect, this message appears, refresh the page to try again. 
+	}
+	else{window.onload = function(){
+	document.getElementById("incorrect").innerHTML=incorrect;
+}}
+}
+}
 
 </script> 	
 
-		
+	
 <ul class="topnav" id="myTopnav">
-<li><a href="#SignIn">Sign In</a>
-<script type="text/javascript">
-if(username === user){ //If the username is correct the html will change
-	window.onload = function() { //happens as soon as the login is finsihed
-		document.getElementById("userprompt").innerHTML=user; //the userprompt input will show up/ 
-}
-}
-else{window.onload = function() { //this will show up if the login is incorrect
-	document.getElementById("incorrect").innerHTML=incorrect; //replacing item by the incorrect variable
-}} 
-</script> 
+<li>
+
 <a id="userprompt"></a><a id="incorrect"></a></li>
-<li><a class="active" href="homepage.html">Home</a></li>
+<li><a class="active" href="homepage.html"></a><a id="username"></a><a id="incorrect"></a> </li>
 <li><a href="#news">News</a></li>
 <li><a href="#contact">Contact</a></li>
 <li><a href="#about">About</a></li>
@@ -59,7 +67,7 @@ else{window.onload = function() { //this will show up if the login is incorrect
 
 <body>
 <body class=titlecolour> 
-<body background="Images/wall.jpg">
+<body background="Images/backg.jpg">
   
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
