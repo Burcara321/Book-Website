@@ -5,39 +5,36 @@
 <link rel="stylesheet" href="Style/booksite.css">  <!-- linking the stylesheet to the html file --> 
 
 
+
 <script type="text/javascript"> 
-var username = ["Andrew", "Pauline", "Her Majesty Queen Elizabeth II, Head of the Commonwealth, Defender of the Faith","Nick"] // This variable defines the set username.
-var password = ["Burcar", "Marois", "Doyle", "Tak"]  							// This variable defines the set password.+-
+var username = ["Andrew", "Pauline","Nick"] 									// This variable defines the set username.
+var password = ["Burcar", "Marois","Tak"]  										// This variable defines the set password.+-
 var incorrect = "Incorrect Login" 												// Variable for when the login did not work
 var user = prompt("Please enter your login username") 							// This variable defines what I want my username to match with when this prompt appears.
-var pass = prompt("Please enter your login password") 							// Prompts the user to imput their password
+var pass = prompt("Please enter your login password") 							// Variable that it checks against for true or false
+var Login = true																// Prompts the user to imput their password
 
-for(i=0; i < username.length; i++){												//For loop to re run checking of the array for password and username
+for( i = 0; i < username.length; i++){											//For loop to re run checking of the array for password and username
 	if(username[i] === user){													// Checking usernames across the array
-		if(password[i] === pass){												// Checking passwords across the array
-		confirm("Hello, your login was successful. Please enjoy the site.")		// Message when the login works
-		}
-		else {confirm("Incorrect password, please try again")} 					//Message when the password works		
-		}
-						
+		if(password[i] === pass){		
+			Login = false} 
+																				// Checking passwords across the array
 	}
+}	
+if(Login === true){confirm("Incorrect")}
+if(Login === false){confirm("Sucessful Login")}
 
-	for(i = 0; i < username.length; i++){										//Message
-	if(username[i] === user){
-	if(password[i] === pass){
+for( i = 0; i < username.length; i++){											//Message confirmation for correct or incorrect usernames/passwords 
+	if(Login === false){
 		window.onload = function() {
 		document.getElementById("username").innerHTML=user;
 }
-	}
-	else{window.onload = function(){
-	document.getElementById("incorrect").innerHTML=incorrect;
-}}
+	}else{window.onload = function(){
+	document.getElementById("incorrect").innerHTML=incorrect;}}
 }
-}
-
 </script> 	
 
-	
+
 <ul class="topnav" id="myTopnav">
 <li>
 
